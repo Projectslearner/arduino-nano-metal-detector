@@ -6,14 +6,14 @@
 */
 
 const int metalDetectorPin = A0; // Analog pin connected to the metal detector sensor
-const int ledPin = 13; // LED pin
 
-void setup() {
-  pinMode(ledPin, OUTPUT); // Set LED pin as output
+void setup() 
+{
   Serial.begin(9600); // Initialize serial communication
 }
 
-void loop() {
+void loop() 
+{
   int sensorValue = analogRead(metalDetectorPin); // Read sensor value
   
   // Print sensor value to Serial Monitor
@@ -21,12 +21,10 @@ void loop() {
   Serial.println(sensorValue);
   
   // If sensor value is above a threshold, metal is detected
-  if (sensorValue > 500) {
+  if (sensorValue > 500) 
+  {
     digitalWrite(ledPin, HIGH); // Turn on LED
     Serial.println("Metal Detected!");
-  } else {
-    digitalWrite(ledPin, LOW); // Turn off LED
   }
-  
   delay(500); // Delay for stability
 }

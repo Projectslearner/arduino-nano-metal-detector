@@ -8,9 +8,8 @@ The Metal Detector project demonstrates how to use an Arduino Nano to create a s
 
 1. **Arduino Nano**
 2. **Metal Detector Sensor**
-3. **LED**
-4. **Resistors**
-5. **Jumper Wires**
+3. **Resistors**
+4. **Jumper Wires**
 
 #### Block Diagram
 
@@ -19,7 +18,6 @@ The Metal Detector project demonstrates how to use an Arduino Nano to create a s
 
 1. **Connect Metal Detector Sensor to Arduino Nano:**
    - Connect the analog pin of the metal detector sensor to an analog pin (e.g., A0) on the Arduino Nano.
-   - Connect one terminal of the LED to a digital pin (e.g., pin 13) on the Arduino Nano.
    - Connect the other terminal of the LED to a current-limiting resistor (optional) and then to ground (GND) of the Arduino Nano.
 
 #### Instructions
